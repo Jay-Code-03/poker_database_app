@@ -311,7 +311,7 @@ def create_app_layout():
                 ])
             ], width=8),
             
-            # Node details panel
+           # Node details panel
             dbc.Col([
                 dbc.Card([
                     dbc.CardHeader(html.H4("Node Details", id="node-details-title")),
@@ -323,6 +323,16 @@ def create_app_layout():
                         html.Div(id="node-actions-chart")
                     ])
                 ]),
+                
+                # Add the hand chart card here
+                dbc.Card([
+                    dbc.CardHeader(html.H4("Hand Range Chart")),
+                    dbc.CardBody([
+                        html.Div(id="node-hand-chart", children=[
+                            html.P("Select a node to see hand distribution")
+                        ])
+                    ])
+                ], className="mt-3"),
                 
                 # New card for available decisions at current node
                 dbc.Card([

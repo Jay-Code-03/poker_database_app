@@ -7,6 +7,7 @@ from dash import html
 
 from app.tree_analysis import get_node_by_path, get_next_numeric_id, _tree_data_cache
 from app.visualization import create_action_chart, build_tree_elements
+from app.hand_chart import create_hand_chart
 
 def register_callbacks(app, db_path):
     """
@@ -61,7 +62,7 @@ def register_callbacks(app, db_path):
             ])
             
             # OPTIMIZATION: Increase max_games for better statistics but cap for performance
-            max_games = 200000
+            max_games = 10000
             
             # Load decision tree data with hero exclusion preference
             tree_data = load_decision_tree_data(
@@ -389,7 +390,8 @@ def register_callbacks(app, db_path):
          Output('node-details-title', 'children'),
          Output('node-details-content', 'children'),
          Output('node-actions-chart', 'children'),
-         Output('available-decisions', 'children')],
+         Output('available-decisions', 'children'),
+         Output('node-hand-chart', 'children')],
         Input('cytoscape-tree', 'tapNodeData'),
         [State('decision-tree-data', 'data'),
          State('current-node-path', 'data'),
@@ -584,7 +586,10 @@ def register_callbacks(app, db_path):
         if not available_decisions:
             available_decisions = [html.P("No further decisions available (terminal node)")]
         
-        return new_path, selected_node, details_title, details_content, action_chart, available_decisions
+        # Add the hand chart creation
+        hand_chart = create_hand_chart(selected_node, exclude_hero)
+        
+        return new_path, selected_node, details_title, details_content, action_chart, available_decisions, hand_chart
     
     # Callback to handle decision option selection
     @app.callback(
@@ -790,7 +795,8 @@ def register_callbacks(app, db_path):
     # Callback to handle hero exclusion toggle during analysis
     @app.callback(
         [Output('cytoscape-tree', 'elements', allow_duplicate=True),
-         Output('node-actions-chart', 'children', allow_duplicate=True)],
+         Output('node-actions-chart', 'children', allow_duplicate=True),
+         Output('node-hand-chart', 'children', allow_duplicate=True)],
         Input('exclude-hero-switch', 'value'),
         [State('decision-tree-data', 'data'),
          State('current-node-path', 'data'),
@@ -799,7 +805,7 @@ def register_callbacks(app, db_path):
     )
     def toggle_hero_exclusion(exclude_hero, tree_data, current_path, street):
         if tree_data is None or 'error' in tree_data:
-            return no_update, no_update
+            return no_update, no_update, no_update
         
         # Get the current selected node
         selected_node = get_node_by_path(tree_data, current_path)
@@ -807,9 +813,10 @@ def register_callbacks(app, db_path):
         # Update the action chart with the new hero exclusion setting
         action_chart = create_action_chart(selected_node, exclude_hero) if selected_node else html.Div()
         
-        # Reload the tree visualization with the new setting
-        # This will trigger update_tree_visualization callback which will respect the exclude_hero setting
-        return no_update, action_chart
+        # Update the hand chart
+        hand_chart = create_hand_chart(selected_node, exclude_hero) if selected_node else html.Div()
+        
+        return no_update, action_chart, hand_chart
     
     # Callback for the reset view button
     @app.callback(

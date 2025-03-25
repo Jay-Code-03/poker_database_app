@@ -2,6 +2,7 @@ import sqlite3
 import pandas as pd
 import time
 import traceback
+from app.card_utils import parse_card_values, standardize_hand, categorize_hand
 
 def optimize_database(conn):
     """Create necessary indexes to optimize query performance"""
@@ -121,7 +122,47 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
         for chunk in pd.read_sql_query(actions_query, conn, chunksize=chunk_size):
             actions_df = pd.concat([actions_df, chunk])
         
-        conn.close()
+        # Query for hole cards
+        print("Retrieving hole cards...")
+        hole_cards_query = f"""
+        SELECT 
+            c.game_id,
+            c.player_id,
+            c.card_values,
+            gp.is_hero
+        FROM cards c
+        JOIN game_players gp ON c.game_id = gp.game_id AND c.player_id = gp.player_id
+        WHERE c.game_id IN ({game_id_str})
+        AND c.card_type = 'Pocket'
+        """
+
+        # Execute the query before closing the connection
+        hole_cards_df = pd.read_sql_query(hole_cards_query, conn)
+        conn.close()  # Move this here from above
+
+        print(f"Retrieved {len(hole_cards_df)} hole card records")
+
+        # Create a dictionary of hole cards by game and player
+        hole_cards_dict = {}
+        for _, row in hole_cards_df.iterrows():
+            game_id = row['game_id']
+            player_id = row['player_id']
+            is_hero = row['is_hero'] == 1
+            
+            if game_id not in hole_cards_dict:
+                hole_cards_dict[game_id] = {}
+            
+            # Parse the raw card string
+            cards = parse_card_values(row['card_values'])
+            if cards:
+                hole_cards_dict[game_id][player_id] = {
+                    'raw': cards,
+                    'standardized': standardize_hand(cards),
+                    'category': categorize_hand(cards),
+                    'is_hero': is_hero
+                }
+
+        print(f"Processed hole cards for {len(hole_cards_dict)} games. Building decision tree...")    
         
         print(f"Retrieved {len(actions_df)} actions. Building decision tree...")
         
@@ -243,6 +284,26 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                             current_node['actions'][action_type] += 1
                             if is_hero:
                                 current_node['hero_actions'][action_type] += 1
+
+                            # Track hole cards for this player if available
+                            if 'hole_cards' not in current_node:
+                                current_node['hole_cards'] = {}
+                                current_node['hero_hole_cards'] = {}
+
+                            # If there are hole cards for this player in this game
+                            if game_id in hole_cards_dict and action['player_id'] in hole_cards_dict[game_id]:
+                                card_info = hole_cards_dict[game_id][action['player_id']]
+                                category = card_info['category']
+                                
+                                # Track in appropriate dictionary
+                                if is_hero:
+                                    if category not in current_node['hero_hole_cards']:
+                                        current_node['hero_hole_cards'][category] = 0
+                                    current_node['hero_hole_cards'][category] += 1
+                                else:
+                                    if category not in current_node['hole_cards']:
+                                        current_node['hole_cards'][category] = 0
+                                    current_node['hole_cards'][category] += 1
                             
                             # Create action node if it doesn't exist
                             if action_type not in current_node['children']:
@@ -330,6 +391,26 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                                 current_node['actions'][action_type] += 1
                                 if is_hero:
                                     current_node['hero_actions'][action_type] += 1
+
+                                # Track hole cards for this player if available
+                                if 'hole_cards' not in current_node:
+                                    current_node['hole_cards'] = {}
+                                    current_node['hero_hole_cards'] = {}
+
+                                # If there are hole cards for this player in this game
+                                if game_id in hole_cards_dict and action['player_id'] in hole_cards_dict[game_id]:
+                                    card_info = hole_cards_dict[game_id][action['player_id']]
+                                    category = card_info['category']
+                                    
+                                    # Track in appropriate dictionary
+                                    if is_hero:
+                                        if category not in current_node['hero_hole_cards']:
+                                            current_node['hero_hole_cards'][category] = 0
+                                        current_node['hero_hole_cards'][category] += 1
+                                    else:
+                                        if category not in current_node['hole_cards']:
+                                            current_node['hole_cards'][category] = 0
+                                        current_node['hole_cards'][category] += 1
                                 
                                 if action_type not in current_node['children']:
                                     current_node['children'][action_type] = {

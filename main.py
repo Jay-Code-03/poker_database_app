@@ -8,6 +8,7 @@ import dash_bootstrap_components as dbc
 from app.database_utils import load_decision_tree_data
 from app.layout import create_app_layout
 from app.callbacks import register_callbacks
+from app.hand_chart import create_hand_chart
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -21,7 +22,9 @@ def create_tree_explorer_app(db_path):
     Returns:
         dash.Dash: A Dash application
     """
-    app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+    app = Dash(__name__, 
+               external_stylesheets=[dbc.themes.BOOTSTRAP],
+               suppress_callback_exceptions=True)
     
     # Set application layout
     app.layout = create_app_layout()
