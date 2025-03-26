@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session sessioncode="7729853568">
+ <general>
+  <client_version>23.1.1.8</client_version>
+  <mode>real</mode>
+  <gametype>Holdem NL</gametype>
+  <tablename>Twister €1 SNG, 1058980336</tablename>
+  <tournamentcurrency>EUR</tournamentcurrency>
+  <duration>00:06:44</duration>
+  <gamecount>19</gamecount>
+  <startdate>2023-06-10 08:24:03</startdate>
+  <currency>EUR</currency>
+  <nickname>mmpq8j6x8</nickname>
+  <bets>3,796</bets>
+  <wins>2,232</wins>
+  <chipsin>500</chipsin>
+  <chipsout>1,500</chipsout>
+  <statuspoints>RSP0.70</statuspoints>
+  <awardpoints>RSP0.70</awardpoints>
+  <ipoints>RSP0.70</ipoints>
+  <tablesize>3</tablesize>
+  <tournamentcode>1058980335</tournamentcode>
+  <tournamentname>Twister €1 SNG</tournamentname>
+  <place>1</place>
+  <buyin>€0 + €0.07 + €0.93</buyin>
+  <totalbuyin>€1</totalbuyin>
+  <win>€2</win>
+ </general>
+ <game gamecode="10136070425">
+  <general>
+   <startdate>2023-06-10 08:24:03</startdate>
+   <smallblind>10</smallblind>
+   <bigblind>20</bigblind>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="20" seat="3" win="40" chips="500"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="20" seat="6" win="0" chips="500"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="1" rebuy="0" addon="0" bet="0" seat="10" win="0" chips="500"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="GGM3M" sum="10" type="1"/>
+   <action no="2" player="Bekocabron" sum="20" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="mmpq8j6x8" type="Pocket">SK C6</cards>
+   <action no="3" player="mmpq8j6x8" sum="0" type="0"/>
+   <cards player="GGM3M" type="Pocket">C10 D5</cards>
+   <action no="4" player="GGM3M" sum="10" type="3"/>
+   <cards player="Bekocabron" type="Pocket">D3 D6</cards>
+   <action no="5" player="Bekocabron" sum="0" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S4 S8 DJ</cards>
+   <action no="6" player="GGM3M" sum="0" type="4"/>
+   <action no="7" player="Bekocabron" sum="0" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">CA</cards>
+   <action no="8" player="GGM3M" sum="0" type="4"/>
+   <action no="9" player="Bekocabron" sum="0" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">D7</cards>
+   <action no="10" player="GGM3M" sum="0" type="4"/>
+   <action no="11" player="Bekocabron" sum="0" type="4"/>
+  </round>
+ </game>
+ <game gamecode="10136070480">
+  <general>
+   <startdate>2023-06-10 08:24:39</startdate>
+   <smallblind>10</smallblind>
+   <bigblind>20</bigblind>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="1" rebuy="0" addon="0" bet="520" seat="3" win="50" chips="520"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="10" seat="6" win="0" chips="480"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="20" seat="10" win="0" chips="500"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="Bekocabron" sum="10" type="1"/>
+   <action no="2" player="mmpq8j6x8" sum="20" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="3" player="GGM3M" sum="520" type="23"/>
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="4" player="Bekocabron" sum="0" type="0"/>
+   <cards player="mmpq8j6x8" type="Pocket">S4 H8</cards>
+   <action no="5" player="mmpq8j6x8" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136070507">
+  <general>
+   <startdate>2023-06-10 08:24:58</startdate>
+   <smallblind>10</smallblind>
+   <bigblind>20</bigblind>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="20" seat="3" win="0" chips="550"/>
+    <player reg_code="" name="Bekocabron" dealer="1" rebuy="0" addon="0" bet="20" seat="6" win="0" chips="470"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="480" seat="10" win="60" chips="480"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="mmpq8j6x8" sum="10" type="1"/>
+   <action no="2" player="GGM3M" sum="20" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="3" player="Bekocabron" sum="20" type="3"/>
+   <cards player="mmpq8j6x8" type="Pocket">S9 HA</cards>
+   <action no="4" player="mmpq8j6x8" sum="480" type="23"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="5" player="GGM3M" sum="0" type="0"/>
+   <action no="6" player="Bekocabron" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136070540">
+  <general>
+   <startdate>2023-06-10 08:25:18</startdate>
+   <smallblind>10</smallblind>
+   <bigblind>20</bigblind>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="10" seat="3" win="0" chips="530"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="67" seat="6" win="0" chips="450"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="1" rebuy="0" addon="0" bet="139" seat="10" win="144" chips="520"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="GGM3M" sum="10" type="1"/>
+   <action no="2" player="Bekocabron" sum="20" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="mmpq8j6x8" type="Pocket">HA S9</cards>
+   <action no="3" player="mmpq8j6x8" sum="40" type="23"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="4" player="GGM3M" sum="0" type="0"/>
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="5" player="Bekocabron" sum="20" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S3 S10 C2</cards>
+   <action no="6" player="Bekocabron" sum="0" type="4"/>
+   <action no="7" player="mmpq8j6x8" sum="27" type="5"/>
+   <action no="8" player="Bekocabron" sum="27" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H9</cards>
+   <action no="9" player="Bekocabron" sum="0" type="4"/>
+   <action no="10" player="mmpq8j6x8" sum="72" type="5"/>
+   <action no="11" player="Bekocabron" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136070595">
+  <general>
+   <startdate>2023-06-10 08:25:53</startdate>
+   <smallblind>15</smallblind>
+   <bigblind>30</bigblind>
+   <ante>5</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="1" rebuy="0" addon="0" bet="5" seat="3" win="0" chips="520"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="35" seat="6" win="0" chips="383"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="592" seat="10" win="75" chips="597"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="Bekocabron" sum="5" type="15"/>
+   <action no="2" player="mmpq8j6x8" sum="5" type="15"/>
+   <action no="3" player="GGM3M" sum="5" type="15"/>
+   <action no="4" player="Bekocabron" sum="15" type="1"/>
+   <action no="5" player="mmpq8j6x8" sum="30" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="6" player="GGM3M" sum="0" type="0"/>
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="7" player="Bekocabron" sum="15" type="3"/>
+   <cards player="mmpq8j6x8" type="Pocket">S4 DA</cards>
+   <action no="8" player="mmpq8j6x8" sum="592" type="23"/>
+   <action no="9" player="Bekocabron" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136070624">
+  <general>
+   <startdate>2023-06-10 08:26:12</startdate>
+   <smallblind>15</smallblind>
+   <bigblind>30</bigblind>
+   <ante>5</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="65" seat="3" win="90" chips="515"/>
+    <player reg_code="" name="Bekocabron" dealer="1" rebuy="0" addon="0" bet="35" seat="6" win="0" chips="348"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="20" seat="10" win="0" chips="637"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="mmpq8j6x8" sum="5" type="15"/>
+   <action no="2" player="GGM3M" sum="5" type="15"/>
+   <action no="3" player="Bekocabron" sum="5" type="15"/>
+   <action no="4" player="mmpq8j6x8" sum="15" type="1"/>
+   <action no="5" player="GGM3M" sum="30" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="6" player="Bekocabron" sum="30" type="3"/>
+   <cards player="mmpq8j6x8" type="Pocket">S7 DQ</cards>
+   <action no="7" player="mmpq8j6x8" sum="0" type="0"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="8" player="GGM3M" sum="0" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H3 DK D4</cards>
+   <action no="9" player="GGM3M" sum="0" type="4"/>
+   <action no="10" player="Bekocabron" sum="0" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D3</cards>
+   <action no="11" player="GGM3M" sum="0" type="4"/>
+   <action no="12" player="Bekocabron" sum="0" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">D8</cards>
+   <action no="13" player="GGM3M" sum="30" type="5"/>
+   <action no="14" player="Bekocabron" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136070661">
+  <general>
+   <startdate>2023-06-10 08:26:39</startdate>
+   <smallblind>15</smallblind>
+   <bigblind>30</bigblind>
+   <ante>5</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="35" seat="3" win="0" chips="570"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="60" seat="6" win="75" chips="313"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="1" rebuy="0" addon="0" bet="5" seat="10" win="0" chips="617"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="GGM3M" sum="5" type="15"/>
+   <action no="2" player="Bekocabron" sum="5" type="15"/>
+   <action no="3" player="mmpq8j6x8" sum="5" type="15"/>
+   <action no="4" player="GGM3M" sum="15" type="1"/>
+   <action no="5" player="Bekocabron" sum="30" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="mmpq8j6x8" type="Pocket">CK D5</cards>
+   <action no="6" player="mmpq8j6x8" sum="0" type="0"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="7" player="GGM3M" sum="15" type="3"/>
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="8" player="Bekocabron" sum="60" type="23"/>
+   <action no="9" player="GGM3M" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136070680">
+  <general>
+   <startdate>2023-06-10 08:26:52</startdate>
+   <smallblind>15</smallblind>
+   <bigblind>30</bigblind>
+   <ante>5</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="1" rebuy="0" addon="0" bet="5" seat="3" win="0" chips="535"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="200" seat="6" win="135" chips="353"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="65" seat="10" win="0" chips="612"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="Bekocabron" sum="5" type="15"/>
+   <action no="2" player="mmpq8j6x8" sum="5" type="15"/>
+   <action no="3" player="GGM3M" sum="5" type="15"/>
+   <action no="4" player="Bekocabron" sum="15" type="1"/>
+   <action no="5" player="mmpq8j6x8" sum="30" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="6" player="GGM3M" sum="0" type="0"/>
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="7" player="Bekocabron" sum="15" type="3"/>
+   <cards player="mmpq8j6x8" type="Pocket">S4 H10</cards>
+   <action no="8" player="mmpq8j6x8" sum="60" type="23"/>
+   <action no="9" player="Bekocabron" sum="30" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SQ HQ DQ</cards>
+   <action no="10" player="Bekocabron" sum="0" type="4"/>
+   <action no="11" player="mmpq8j6x8" sum="0" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D8</cards>
+   <action no="12" player="Bekocabron" sum="0" type="4"/>
+   <action no="13" player="mmpq8j6x8" sum="0" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">H7</cards>
+   <action no="14" player="Bekocabron" sum="135" type="5"/>
+   <action no="15" player="mmpq8j6x8" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136070744">
+  <general>
+   <startdate>2023-06-10 08:27:34</startdate>
+   <smallblind>20</smallblind>
+   <bigblind>40</bigblind>
+   <ante>5</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="45" seat="3" win="0" chips="530"/>
+    <player reg_code="" name="Bekocabron" dealer="1" rebuy="0" addon="0" bet="85" seat="6" win="115" chips="423"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="25" seat="10" win="0" chips="547"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="mmpq8j6x8" sum="5" type="15"/>
+   <action no="2" player="GGM3M" sum="5" type="15"/>
+   <action no="3" player="Bekocabron" sum="5" type="15"/>
+   <action no="4" player="mmpq8j6x8" sum="20" type="1"/>
+   <action no="5" player="GGM3M" sum="40" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="6" player="Bekocabron" sum="40" type="3"/>
+   <cards player="mmpq8j6x8" type="Pocket">D7 SJ</cards>
+   <action no="7" player="mmpq8j6x8" sum="0" type="0"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="8" player="GGM3M" sum="0" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S6 S8 CJ</cards>
+   <action no="9" player="GGM3M" sum="0" type="4"/>
+   <action no="10" player="Bekocabron" sum="0" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C5</cards>
+   <action no="11" player="GGM3M" sum="0" type="4"/>
+   <action no="12" player="Bekocabron" sum="0" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">S9</cards>
+   <action no="13" player="GGM3M" sum="0" type="4"/>
+   <action no="14" player="Bekocabron" sum="40" type="5"/>
+   <action no="15" player="GGM3M" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136070815">
+  <general>
+   <startdate>2023-06-10 08:28:15</startdate>
+   <smallblind>20</smallblind>
+   <bigblind>40</bigblind>
+   <ante>5</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="25" seat="3" win="0" chips="485"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="45" seat="6" win="0" chips="493"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="1" rebuy="0" addon="0" bet="517" seat="10" win="115" chips="522"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="GGM3M" sum="5" type="15"/>
+   <action no="2" player="Bekocabron" sum="5" type="15"/>
+   <action no="3" player="mmpq8j6x8" sum="5" type="15"/>
+   <action no="4" player="GGM3M" sum="20" type="1"/>
+   <action no="5" player="Bekocabron" sum="40" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="mmpq8j6x8" type="Pocket">C6 HA</cards>
+   <action no="6" player="mmpq8j6x8" sum="517" type="23"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="7" player="GGM3M" sum="0" type="0"/>
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="8" player="Bekocabron" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136070835">
+  <general>
+   <startdate>2023-06-10 08:28:26</startdate>
+   <smallblind>30</smallblind>
+   <bigblind>60</bigblind>
+   <ante>5</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="1" rebuy="0" addon="0" bet="5" seat="3" win="0" chips="460"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="125" seat="6" win="135" chips="448"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="65" seat="10" win="0" chips="592"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="Bekocabron" sum="5" type="15"/>
+   <action no="2" player="mmpq8j6x8" sum="5" type="15"/>
+   <action no="3" player="GGM3M" sum="5" type="15"/>
+   <action no="4" player="Bekocabron" sum="30" type="1"/>
+   <action no="5" player="mmpq8j6x8" sum="60" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="6" player="GGM3M" sum="0" type="0"/>
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="7" player="Bekocabron" sum="30" type="3"/>
+   <cards player="mmpq8j6x8" type="Pocket">C3 S9</cards>
+   <action no="8" player="mmpq8j6x8" sum="0" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S10 C10 S4</cards>
+   <action no="9" player="Bekocabron" sum="0" type="4"/>
+   <action no="10" player="mmpq8j6x8" sum="0" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D7</cards>
+   <action no="11" player="Bekocabron" sum="60" type="5"/>
+   <action no="12" player="mmpq8j6x8" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136075600">
+  <general>
+   <startdate>2023-06-10 08:28:47</startdate>
+   <smallblind>30</smallblind>
+   <bigblind>60</bigblind>
+   <ante>5</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="65" seat="3" win="0" chips="455"/>
+    <player reg_code="" name="Bekocabron" dealer="1" rebuy="0" addon="0" bet="65" seat="6" win="0" chips="518"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="522" seat="10" win="195" chips="527"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="mmpq8j6x8" sum="5" type="15"/>
+   <action no="2" player="GGM3M" sum="5" type="15"/>
+   <action no="3" player="Bekocabron" sum="5" type="15"/>
+   <action no="4" player="mmpq8j6x8" sum="30" type="1"/>
+   <action no="5" player="GGM3M" sum="60" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="6" player="Bekocabron" sum="60" type="3"/>
+   <cards player="mmpq8j6x8" type="Pocket">C9 DQ</cards>
+   <action no="7" player="mmpq8j6x8" sum="522" type="23"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="8" player="GGM3M" sum="0" type="0"/>
+   <action no="9" player="Bekocabron" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136075623">
+  <general>
+   <startdate>2023-06-10 08:28:59</startdate>
+   <smallblind>30</smallblind>
+   <bigblind>60</bigblind>
+   <ante>5</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="35" seat="3" win="0" chips="390"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="305" seat="6" win="0" chips="453"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="1" rebuy="0" addon="0" bet="627" seat="10" win="645" chips="657"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="GGM3M" sum="5" type="15"/>
+   <action no="2" player="Bekocabron" sum="5" type="15"/>
+   <action no="3" player="mmpq8j6x8" sum="5" type="15"/>
+   <action no="4" player="GGM3M" sum="30" type="1"/>
+   <action no="5" player="Bekocabron" sum="60" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="mmpq8j6x8" type="Pocket">DK SK</cards>
+   <action no="6" player="mmpq8j6x8" sum="120" type="23"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="7" player="GGM3M" sum="0" type="0"/>
+   <cards player="Bekocabron" type="Pocket">X X</cards>
+   <action no="8" player="Bekocabron" sum="60" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H4 DA C9</cards>
+   <action no="9" player="Bekocabron" sum="60" type="5"/>
+   <action no="10" player="mmpq8j6x8" sum="60" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C5</cards>
+   <action no="11" player="Bekocabron" sum="120" type="5"/>
+   <action no="12" player="mmpq8j6x8" sum="120" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">HJ</cards>
+   <action no="13" player="Bekocabron" sum="0" type="4"/>
+   <action no="14" player="mmpq8j6x8" sum="322" type="5"/>
+   <action no="15" player="Bekocabron" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136075708">
+  <general>
+   <startdate>2023-06-10 08:29:57</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <ante>8</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="1" rebuy="0" addon="0" bet="8" seat="3" win="0" chips="355"/>
+    <player reg_code="" name="Bekocabron" dealer="0" rebuy="0" addon="0" bet="148" seat="6" win="0" chips="148"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="148" seat="10" win="304" chips="997"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="Bekocabron" sum="8" type="15"/>
+   <action no="2" player="mmpq8j6x8" sum="8" type="15"/>
+   <action no="3" player="GGM3M" sum="8" type="15"/>
+   <action no="4" player="Bekocabron" sum="40" type="1"/>
+   <action no="5" player="mmpq8j6x8" sum="80" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="6" player="GGM3M" sum="0" type="0"/>
+   <cards player="Bekocabron" type="Pocket">DK SA</cards>
+   <action no="7" player="Bekocabron" sum="100" type="7"/>
+   <cards player="mmpq8j6x8" type="Pocket">HK S8</cards>
+   <action no="8" player="mmpq8j6x8" sum="60" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C2 C8 C6</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">HJ</cards>
+  </round>
+  <round no="4">
+   <cards type="River">S7</cards>
+  </round>
+ </game>
+ <game gamecode="10136075736">
+  <general>
+   <startdate>2023-06-10 08:30:17</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <ante>8</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="88" seat="3" win="0" chips="347"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="1" rebuy="0" addon="0" bet="160" seat="10" win="176" chips="1,153"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="mmpq8j6x8" sum="8" type="15"/>
+   <action no="2" player="GGM3M" sum="8" type="15"/>
+   <action no="3" player="mmpq8j6x8" sum="40" type="1"/>
+   <action no="4" player="GGM3M" sum="80" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="mmpq8j6x8" type="Pocket">D8 C2</cards>
+   <action no="5" player="mmpq8j6x8" sum="160" type="23"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="6" player="GGM3M" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136075742">
+  <general>
+   <startdate>2023-06-10 08:30:23</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <ante>8</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="1" rebuy="0" addon="0" bet="48" seat="3" win="0" chips="259"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="88" seat="10" win="96" chips="1,241"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="GGM3M" sum="8" type="15"/>
+   <action no="2" player="mmpq8j6x8" sum="8" type="15"/>
+   <action no="3" player="GGM3M" sum="40" type="1"/>
+   <action no="4" player="mmpq8j6x8" sum="80" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="mmpq8j6x8" type="Pocket">D9 H5</cards>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="5" player="GGM3M" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136075749">
+  <general>
+   <startdate>2023-06-10 08:30:26</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <ante>8</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="88" seat="3" win="0" chips="211"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="1" rebuy="0" addon="0" bet="160" seat="10" win="176" chips="1,289"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="mmpq8j6x8" sum="8" type="15"/>
+   <action no="2" player="GGM3M" sum="8" type="15"/>
+   <action no="3" player="mmpq8j6x8" sum="40" type="1"/>
+   <action no="4" player="GGM3M" sum="80" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="mmpq8j6x8" type="Pocket">H4 CK</cards>
+   <action no="5" player="mmpq8j6x8" sum="160" type="23"/>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="6" player="GGM3M" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136075758">
+  <general>
+   <startdate>2023-06-10 08:30:32</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <ante>8</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="1" rebuy="0" addon="0" bet="48" seat="3" win="0" chips="123"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="0" rebuy="0" addon="0" bet="88" seat="10" win="96" chips="1,377"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="GGM3M" sum="8" type="15"/>
+   <action no="2" player="mmpq8j6x8" sum="8" type="15"/>
+   <action no="3" player="GGM3M" sum="40" type="1"/>
+   <action no="4" player="mmpq8j6x8" sum="80" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="mmpq8j6x8" type="Pocket">C6 D3</cards>
+   <cards player="GGM3M" type="Pocket">X X</cards>
+   <action no="5" player="GGM3M" sum="0" type="0"/>
+  </round>
+ </game>
+ <game gamecode="10136075763">
+  <general>
+   <startdate>2023-06-10 08:30:35</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <ante>8</ante>
+   <players>
+    <player reg_code="" name="GGM3M" dealer="0" rebuy="0" addon="0" bet="75" seat="3" win="0" chips="75"/>
+    <player reg_code="7729853568" name="mmpq8j6x8" dealer="1" rebuy="0" addon="0" bet="75" seat="10" win="150" chips="1,425"/>
+   </players>
+  </general>
+  <round no="0">
+   <action no="1" player="mmpq8j6x8" sum="8" type="15"/>
+   <action no="2" player="GGM3M" sum="8" type="15"/>
+   <action no="3" player="mmpq8j6x8" sum="40" type="1"/>
+   <action no="4" player="GGM3M" sum="67" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="GGM3M" type="Pocket">DK D7</cards>
+   <cards player="mmpq8j6x8" type="Pocket">S10 H5</cards>
+   <action no="5" player="mmpq8j6x8" sum="27" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">DJ C8 H10</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">DQ</cards>
+  </round>
+  <round no="4">
+   <cards type="River">S6</cards>
+  </round>
+ </game>
+</session>

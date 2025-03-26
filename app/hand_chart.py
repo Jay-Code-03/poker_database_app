@@ -31,6 +31,12 @@ def create_hand_chart(node, exclude_hero=True):
             else:
                 hole_cards[category] = count
     
+    # Use dictionary comprehension to filter out Unknown hands
+    hole_cards = {k: v for k, v in hole_cards.items() if k != "Unknown"}
+    
+    # Also filter out any hands that might be None or contain None
+    hole_cards = {k: v for k, v in hole_cards.items() if k and 'None' not in k}
+
     # If no hole cards data, return message
     if not hole_cards:
         return html.Div("No hole cards data available for this node")
