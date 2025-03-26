@@ -62,7 +62,7 @@ def register_callbacks(app, db_path):
             ])
             
             # OPTIMIZATION: Increase max_games for better statistics but cap for performance
-            max_games = 1000
+            max_games = 1000000
             
             # Load decision tree data with hero exclusion preference
             tree_data = load_decision_tree_data(

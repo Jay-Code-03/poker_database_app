@@ -311,11 +311,30 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                                     'name': action_type,
                                     'children': {},
                                     'actions': {},
-                                    'hero_actions': {}  # Track hero actions separately
+                                    'hero_actions': {},  # Track hero actions separately
+                                    'hole_cards': {},    # Initialize hole card dictionary
+                                    'hero_hole_cards': {}  # Initialize hero hole card dictionary
                                 }
                             
                             # Advance to the action node
                             action_node = current_node['children'][action_type]
+
+                            # Track hole card information for this action
+                            if game_id in hole_cards_dict and action['player_id'] in hole_cards_dict[game_id]:
+                                card_info = hole_cards_dict[game_id][action['player_id']]
+                                category = card_info['category']
+                                
+                                # Skip unknown cards (X X)
+                                if category != "Unknown":
+                                    # Track in appropriate dictionary for the action node
+                                    if is_hero:
+                                        if category not in action_node['hero_hole_cards']:
+                                            action_node['hero_hole_cards'][category] = 0
+                                        action_node['hero_hole_cards'][category] += 1
+                                    else:
+                                        if category not in action_node['hole_cards']:
+                                            action_node['hole_cards'][category] = 0
+                                        action_node['hole_cards'][category] += 1
                             
                             # Handle terminal actions
                             if action_type == 'fold':
@@ -340,6 +359,8 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                                         'children': {},
                                         'actions': {},
                                         'hero_actions': {},  # Track hero actions separately
+                                        'hole_cards': {},    # Initialize hole card dictionary
+                                        'hero_hole_cards': {},  # Initialize hero hole card dictionary
                                         'facing_all_in': True
                                     }
                                     
@@ -358,7 +379,9 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                                         'name': next_position,
                                         'children': {},
                                         'actions': {},
-                                        'hero_actions': {}  # Track hero actions separately
+                                        'hero_actions': {},  # Track hero actions separately
+                                        'hole_cards': {},    # Initialize hole card dictionary
+                                        'hero_hole_cards': {}  # Initialize hero hole card dictionary
                                     }
                                 
                                 # Switch to opponent
@@ -433,6 +456,8 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                         'children': {},
                         'actions': {},
                         'hero_actions': {},  # Track hero actions separately
+                        'hole_cards': {},    # Initialize hole card dictionary
+                        'hero_hole_cards': {},  # Initialize hero hole card dictionary
                         'is_synthetic': True,
                         'is_terminal': True
                     }
@@ -442,6 +467,8 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                         'children': {},
                         'actions': {},
                         'hero_actions': {},  # Track hero actions separately
+                        'hole_cards': {},    # Initialize hole card dictionary
+                        'hero_hole_cards': {},  # Initialize hero hole card dictionary
                         'is_synthetic': True,
                         'is_terminal': True
                     }

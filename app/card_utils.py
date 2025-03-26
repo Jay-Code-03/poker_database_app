@@ -7,6 +7,10 @@ def parse_card_values(card_string):
     """
     if not card_string or not isinstance(card_string, str):
         return []
+    
+    # If cards are marked as "X X", treat as unknown
+    if "X X" in card_string:
+        return []
         
     # Split on whitespace and filter out empty strings
     cards = [card.strip() for card in card_string.split() if card.strip()]
