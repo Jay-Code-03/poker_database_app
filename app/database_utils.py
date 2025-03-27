@@ -259,7 +259,8 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                         facing_all_in = False
                         is_terminal = False
                         response_required = True  # Flag to indicate if a response is expected
-                        
+                        has_seen_raise = False  # Track whether there's been a raise in this street
+
                         # Process each action in sequence
                         for _, action in sorted_actions.iterrows():
                             action_position = action['position']
@@ -319,6 +320,10 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                             # Advance to the action node
                             action_node = current_node['children'][action_type]
 
+                            # Track raises in this street
+                            if any(r in action_type for r in ['raise', 'bet']):
+                                has_seen_raise = True
+
                             # Track hole card information for this action
                             if game_id in hole_cards_dict and action['player_id'] in hole_cards_dict[game_id]:
                                 card_info = hole_cards_dict[game_id][action['player_id']]
@@ -369,6 +374,12 @@ def load_decision_tree_data(db_path, stack_min=0, stack_max=25, game_type="heads
                                 current_position, next_position = next_position, current_position
                             elif ('call' in action_type and facing_all_in) or 'all_in_call' in action_type:
                                 # All-in call is terminal - showdown
+                                is_terminal = True
+                                response_required = False
+                                continue
+                            # Add new condition for calls of raises in pre-flop
+                            elif 'call' in action_type and has_seen_raise and street == 'preflop':
+                                # Call of a raise in pre-flop ends the street
                                 is_terminal = True
                                 response_required = False
                                 continue
